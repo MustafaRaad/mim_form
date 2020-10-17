@@ -1,0 +1,81 @@
+* {
+  font-family: "Cairo", sans-serif;
+}
+
+body{
+background-color: #f6f6f6;
+}
+p, label{
+font-size: 12pt;
+}
+
+.navbar {
+  padding: 0 30px;
+  justify-content: center;
+  direction: rtl;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.nav-item {
+  margin-right: 1rem;
+}
+
+.nav-link {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: auto 10px;
+}
+
+.active {
+  padding: 5px;
+  border-bottom: 2px dotted;
+  border-color: #6c63ff;
+}
+
+.back {
+  border-radius: 10px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+.title {
+  text-align: center !important;
+  margin: 15px auto;
+  font-weight: bold;
+  font-size: 14pt;
+}
+.form-header {
+background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+  border-radius: 10px;
+  padding: 20px;
+}
+.form-header_p {
+  margin: auto;
+}
+.form-header_p span {
+  font-weight: bold;
+  font-size: 12pt;
+}
+.form-header_p p {
+  font-weight: 400;
+  font-size: 12pt;
+  margin-bottom: 10px;
+}
+form {
+  margin-top: 20px;
+}
+.form-row {
+  direction: rtl;
+  text-align: right !important;
+  margin: 10px auto;
+}
+.form-check-label {
+  margin-bottom: 0;
+  margin: auto 30px;
+}
+.btn{
+    margin: auto;
+}
