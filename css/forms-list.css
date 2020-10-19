@@ -1,4 +1,4 @@
-@import url("/css/shared.css");
+/* @import "/css/shared.css"; */
 
 body {
   direction: rtl;
@@ -18,4 +18,24 @@ body {
 .thumb-nail {
   max-width: 50px;
   min-width: 40;
+}
+
+table {
+  counter-reset: my-sec-counter;
+}
+.increment::before {
+  /* Increment "my-sec-counter" by 1 */
+  counter-increment: my-sec-counter;
+  content: counter(my-sec-counter);
+}
+#myInput {
+  /* background-image: url("./search-solid.svg"); Add a search icon to input */
+  /* background-size: 26px; */
+  /* background-position: 56.5rem 12px; */
+  /* background-repeat: no-repeat; */
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+}
+.th {
+  cursor: pointer;
 }

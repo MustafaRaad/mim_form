@@ -1,0 +1,12 @@
+body {
+  direction: rtl;
+}
+
+th {
+  color: #303030 !important;
+}
+
+.thumb-nail {
+  max-width: 150px;
+  min-width: 120px;
+}

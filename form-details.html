@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="fonts/Cairo-Light.ttf">
+    <link rel="stylesheet" href="fonts/Cairo-Regular.ttf">
+    <link rel="stylesheet" href="fonts/Cairo-SemiBold.ttf">
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/form-details.css">
+    <title>الاستمارة</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  bg-white text-dark shadow-sm p-1 mb-5 rounded">
+        <span class="navbar-brand">وزارة الصناعة والمعادن</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" href="home.html">الصفحة الرئيسية </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="forms-list.html">قائمة الاستمارات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">تسجيل الدخول </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">تسجيل حساب </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="container back shadow bg-white p-4">
+        <!-- ----------------------------------------------------------head----------------------------------------- -->
+        <header class="row align-items-center align-self-center">
+            <div class="col-3">
+                <img src="images/user.svg" alt="{{flan}} photo" class="rounded img-thumbnail p-2">
+                <!-- <p class="rounded img-thumbnail no-photo">No picture available</p> -->
+            </div>
+            <div class="col-6 border-right border-dark text-right">
+                <h2>ID: [ID]</h2>
+                <hr>
+                <h5>تأريخ تسجيل الاستمارة: [date]</h5>
+                <h5>الاسم الثلاثي: [name]</h5>
+            </div>
+        </header>
+        <!-- ----------------------------------------------------------info----------------------------------------- -->
+        <h4 class="title shadow-none p-2 my-4 text-white bg-info rounded text-center">
+            معلومات الجهة الطالبة للتسجيل والوكيل ان وجد
+        </h4>
+        <table class="table text-center my-3">
+            <!-- ------------------- -->
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">الاسم بالعربي</th>
+                    <th scope="col">الاسم بالانكليزي</th>
+                    <th scope="col">نوع طلب التسجيل</th>
+                    <th scope="col">المهنة</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">مصطفى رعد</td>
+                    <td>Mustafa Raad M</td>
+                    <td>شركة</td>
+                    <td>خدمي</td>
+                </tr>
+            </tbody>
+            <!-- ------------------- -->
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">الدولة</th>
+                    <th scope="col" colspan="2">صندوق بريد</th>
+                    <th scope="col">فاكس</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">العراق</td>
+                    <td colspan="2">10069</td>
+                    <td>07701234567</td>
+
+
+                </tr>
+            </tbody>
+            <!-- ------------------- -->
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col" colspan="2">البريد الالكتروني</th>
+                    <th scope="col">هاتف اول</th>
+                    <th scope="col">هاتف ثاني</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row" colspan="2">ofydesigner.2008@gmail.com</td>
+                    <td>07701234567</td>
+                    <td> - </td>
+                </tr>
+            </tbody>
+            <!-- ------------------- -->
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col" colspan="2">العنوان التفصيلي عربي</th>
+                    <th scope="col" colspan="2">العنوان التفصيلي انكليزي</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row" colspan="2">عنوان عنوان عنوان عنوان عنوان عنوان عنوان عنوان عنوان عنوان عنوان عنوان
+                    </td>
+                    <td colspan="2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dignissimos
+                        voluptate quasi,
+                        qui quas </td>
+                </tr>
+            </tbody>
+            <!-- ------------------- -->
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col" colspan="2">نوع الشركة او الهيئة</th>
+                    <th scope="col" colspan="2">اسم مالكها / المدير المفوض</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row" colspan="2">خاصة</td>
+                    <td colspan="2">مصطفى رعد</td>
+                </tr>
+            </tbody>
+
+
+        </table>
+
+
+        <h4 class="title shadow-none p-2 my-4 text-white bg-info rounded text-center">
+            عنوان الوكيل / شركة الملكية الفكرية
+        </h4>
+
+
+        <table class="table text-center my-3">
+            <!-- ------------------- -->
+
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">تأريخ الوكالة من</th>
+                    <th scope="col">تأريخ الوكالة الى</th>
+                    <th scope="col">صندوق بريد</th>
+                    <th scope="col">فاكس</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">2020 - 10 - 20</td>
+                    <td>2020 - 10 - 23 </td>
+                    <td>10096</td>
+                    <td>10096</td>
+                </tr>
+            </tbody>
+            <!-- ------------------- -->
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">البريد الالكتروني</th>
+                    <th scope="col">هاتف اول</th>
+                    <th scope="col">هاتف ثاني</th>
+                    <th scope="col">العنوان التفصيلي</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">ofydesigner.2008@gmail.com</td>
+                    <td>07701234567</td>
+                    <td> - </td>
+                    <td>عنوان عنوان عنوان عنوان عنوان عنوان عنوان</td>
+
+                </tr>
+            </tbody>
+            <!-- ------------------- -->
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col" colspan="2">رقم الايصال المالي</th>
+                    <th scope="col">تأريخ الايصال المالي</th>
+                    <th scope="col">الرسوم المدفوعة</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">123456789</td>
+                    <td>2020-10-20</td>
+                    <td>25$</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- ------------------------- -->
+        <h4 class="title shadow-none p-2 my-4 text-white bg-info rounded text-center">
+            تفاصيل العلامة التجارية
+        </h4>
+
+        <table class="table text-center my-3">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">رقم الطلب:</th>
+                    <th scope="col">تأريخ تقديم الطلب:</th>
+                    <th scope="col">صورة العلامة</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>123456789</td>
+                    <td>2020-10-20</td>
+                    <td>
+                        <img src="images/logo.svg" alt="{{flan}} photo" class="thumb-nail p-2">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- ------------------------- -->
+        <h4 class="title shadow-none p-2 my-4 text-white bg-info rounded text-center">
+            وصف العلامة
+        </h4>
+        <table class="table text-center my-3">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">اسماء</th>
+                    <th scope="col">حروف و رموز</th>
+                    <th scope="col">ارقام</th>
+                    <th scope="col">اشكال هندسية</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> - </td>
+                    <td> - </td>
+                    <td> - </td>
+                    <td> - </td>
+                </tr>
+            </tbody>
+            <!-- ------------------------- -->
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">الوان</th>
+                    <th scope="col">غير ذلك</th>
+                    <th scope="col">المعنى باللغة العربية</th>
+                    <th scope="col">نوع الشركة او الهيئة</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> - </td>
+                    <td> - </td>
+                    <td> - </td>
+                    <td> خدمة </td>
+                </tr>
+            </tbody>
+            <!-- ------------------------- -->
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col" colspan="4">اية شروط او قيود يرغب طال التسجيل تحديدها لتسجيل العلامة...</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, cum veniam?
+                        Praesentium eos consequuntur exercitationem qui, eum maiores tempora accusamus ipsa maxime
+                        corrupti quisquam. Consequatur odio quibusdam culpa esse! Nihil.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
