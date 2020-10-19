@@ -1,3 +1,9 @@
+@import url("/fonts/Cairo-Light.ttf");
+@import url("/fonts/Cairo-Regular.ttf");
+@import url("/fonts/Cairo-SemiBold.ttf");
+@import url("https://use.fontawesome.com/releases/v5.15.1/css/all.css");
+/* <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"> */
+
 * {
   font-family: "Cairo", sans-serif;
 }
@@ -19,8 +25,8 @@ span {
 
 .navbar-brand {
   font-weight: 600;
-  font-size: 1.4rem!important;
-  color: #5e96fd;
+  font-size: 1.4rem !important;
+  color: #079a49;
 }
 
 .nav-item {
@@ -35,7 +41,11 @@ span {
 }
 
 .active {
-  padding: 8px;
   border-bottom: 2px dotted;
   border-color: #6c63ff;
+}
+
+.back {
+  border-radius: 10px;
+  margin: 2rem auto;
 }

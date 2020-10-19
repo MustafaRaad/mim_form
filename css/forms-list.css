@@ -1,0 +1,21 @@
+@import url("/css/shared.css");
+
+body {
+  direction: rtl;
+}
+
+.table td,
+.table th {
+  vertical-align: inherit;
+}
+
+[data-href] {
+  cursor: pointer;
+}
+[data-href]:hover {
+  background-color: rgb(184 182 201 / 34%);
+}
+.thumb-nail {
+  max-width: 50px;
+  min-width: 40;
+}

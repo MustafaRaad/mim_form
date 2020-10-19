@@ -1,3 +1,5 @@
+@import url("/css/shared.css");
+
 .slide-show {
 background-image: linear-gradient(-251deg, #2CD8D5 35%, #c1eeff 55%, rgb(0 123 255 / 51%) 50%);
   border-radius: 10px;

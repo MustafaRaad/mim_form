@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/forms-list.css">
+
+    <title>قائمة الاستمارات</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  bg-white text-dark shadow-sm p-1 mb-5 rounded">
+        <span class="navbar-brand">وزارة الصناعة والمعادن</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" href="home.html">الصفحة الرئيسية </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="forms-list.html">قائمة الاستمارات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">تسجيل الدخول </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">تسجيل حساب </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="container back shadow bg-white p-4">
+        <!-- ----------------------------------------------------------------search---------------------------------------------------------------- -->
+        <div class="row mx-2">
+            <input type="text" class="form-control col-10 mx-auto" id="myInput" onkeyup="myFunction()" placeholder="بحث عن اسم...">
+            <button class="btn btn-primary col-1 mx-auto" onclick="window.print()" role="button"><i class="fas fa-print fa-lg"
+                    aria-hidden="true"></i></button>
+
+        </div>
+        <!-- ----------------------------------------------------------------table---------------------------------------------------------------- -->
+        <table class="table table-md text-center border back" id="table" data-toggle="table" data-search="true"
+            data-filter-control="true" data-show-export="true" data-click-to-select="true">
+            <thead class="table-warning">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">ID</th>
+                    <th scope="col" onclick="sortTable(2)" class="th">الاسم الكامل</th>
+                    <th scope="col" onclick="sortTable(3)" class="th">نوع الشركة</th>
+                    <th scope="col" onclick="sortTable(4)" class="th">نوع طالب التسجيل</th>
+                    <th scope="col" onclick="sortTable(5)" class="th">المهنة</th>
+                    <th scope="col" onclick="sortTable(6)" class="th">العلامة</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr class='clickable-row' data-href='/form-details.html/'>
+                    <th scope="row">1</th>
+                    <td>
+                        demo demo demo demo demo demo demo demo
+                    </td>
+                    <td>
+                        demo demo demo demo demo demo demo demo
+                    </td>
+                    <td>
+                        demo demo demo demo demo demo demo demo
+                    </td>
+                    <td>
+                        demo demo demo demo demo demo demo demo
+                    </td>
+                    <td>
+                        demo demo demo demo demo demo demo demo
+                    </td>
+                    <td>
+                        <img src="/images/صورة-الصناعة.png" alt="..." class="thumb-nail">
+                    </td>
+                </tr>
+
+                <tr class='clickable-row' data-href='/form-details.html/'>
+                    <th scope="row">2</th>
+                    <td>
+                        demo demo demo demo demo demo demo demo
+                    </td>
+                    <td>
+                        name name name name name 
+                    </td>
+                    <td>
+                        demo demo demo demo demo demo demo demo
+                    </td>
+                    <td>
+                        demo demo demo demo demo demo demo demo
+                    </td>
+                    <td>
+                        demo demo demo demo demo demo demo demo
+                    </td>
+                    <td>
+                        <img src="/images/form-fig3.svg" alt="..." class="thumb-nail">
+                    </td>
+                </tr>
+
+                <tr class='clickable-row' data-href='/form-details.html/'>
+                    <th scope="row">3</th>
+                    <td>
+                        demo demo demo demo demo demo demo demo
+                    </td>
+                    <td>
+                        other other other other other 
+                    </td>
+                    <td>
+                        demo demo demo demo demo demo demo demo
+                    </td>
+                    <td>
+                        demo demo demo demo demo demo demo demo
+                    </td>
+                    <td>
+                        demo demo demo demo demo demo demo demo
+                    </td>
+                    <td>
+                        <img src="/images/form-fig1.svg" alt="..." class="thumb-nail">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- ----------------------------------------------------------------Pagination---------------------------------------------------------------- -->
+
+        <div class="row justify-content-center my-auto">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item "><a class="page-link" href="#">&raquo;</a></li>
+            </ul>
+            </ul>
+        </div>
+        </div>
+
+        <script>
+            var myTab = document.getElementById('table');
+            for (i = 1; i < myTab.rows.length; i++) {
+                var objCells = myTab.rows[i].cells.item(1).innerText;
+                var res = objCells.substr(0, 8);
+                document.getElementById("table").rows[i].cells.item(1).innerText = res;
+            }
+            function myFunction() {
+                // Declare variables
+                var input, filter, table, tr, td, i, txtValue;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                table = document.getElementById("table");
+                tr = table.getElementsByTagName("tr");
+
+                // Loop through all table rows, and hide those who don't match the search query
+                for (i = 0; i < tr.length; i++) {
+                    td = tr[i].getElementsByTagName("td")[1];
+                    if (td) {
+                        txtValue = td.textContent || td.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                        } else {
+                            tr[i].style.display = "none";
+                        }
+                    }
+                }
+            }
+
+            function sortTable(n) {
+                var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+                table = document.getElementById("table");
+                switching = true;
+                // Set the sorting direction to ascending:
+                dir = "asc";
+                /* Make a loop that will continue until
+                no switching has been done: */
+                while (switching) {
+                    // Start by saying: no switching is done:
+                    switching = false;
+                    rows = table.rows;
+                    /* Loop through all table rows (except the
+                    first, which contains table headers): */
+                    for (i = 1; i < (rows.length - 1); i++) {
+                        // Start by saying there should be no switching:
+                        shouldSwitch = false;
+                        /* Get the two elements you want to compare,
+                        one from current row and one from the next: */
+                        x = rows[i].getElementsByTagName("TD")[n];
+                        y = rows[i + 1].getElementsByTagName("TD")[n];
+                        /* Check if the two rows should switch place,
+                        based on the direction, asc or desc: */
+                        if (dir == "asc") {
+                            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                                // If so, mark as a switch and break the loop:
+                                shouldSwitch = true;
+                                break;
+                            }
+                        } else if (dir == "desc") {
+                            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                                // If so, mark as a switch and break the loop:
+                                shouldSwitch = true;
+                                break;
+                            }
+                        }
+                    }
+                    if (shouldSwitch) {
+                        /* If a switch has been marked, make the switch
+                        and mark that a switch has been done: */
+                        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                        switching = true;
+                        // Each time a switch is done, increase this count by 1:
+                        switchcount++;
+                    } else {
+                        /* If no switching has been done AND the direction is "asc",
+                        set the direction to "desc" and run the while loop again. */
+                        if (switchcount == 0 && dir == "asc") {
+                            dir = "desc";
+                            switching = true;
+                        }
+                    }
+                }
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+            </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+            </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+            </script>
+        <script>
+            jQuery(document).ready(function ($) {
+                $(".clickable-row").click(function () {
+                    window.location = $(this).data("href");
+                });
+            });
+        </script>
+</body>
+
+</html>

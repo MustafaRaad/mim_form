@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/register.css">
+    <title>التسجيل</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  bg-white text-dark shadow-sm p-1 mb-5 rounded">
+        <span class="navbar-brand">وزارة الصناعة والمعادن</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" href="home.html">الصفحة الرئيسية </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="forms-list.html">قائمة الاستمارات</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="login.html">تسجيل الدخول </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="register.html">تسجيل حساب </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="logreg-forms" class="shadow back bg-white p-5 ">
+        <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> تسجيل حساب جديد</h1>
+
+        <form action="/reset/password/" class="form-reset">
+            <input type="email" id="resetEmail" class="form-control" placeholder="Email address" required=""
+                autofocus="">
+            <button class="btn btn-primary btn-block" type="submit">اعادة تعيين كلمة المرور</button>
+            <a href="#" id="cancel_reset"><i class="fas fa-angle-left"></i> العودة</a>
+        </form>
+
+        <form action="/signup/" class="form-signin">
+            <div class="social-login">
+                <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i>
+                    </span> </button>
+                <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google"></i>
+                    </span> </button>
+                <button class="btn phone-btn social-btn" type="button"><span><i class="fas fa-phone-alt"></i>
+                    </span> </button>
+            </div>
+
+            <div class="row">
+                <hr class="col-4">
+                <p class="col-2" style="text-align:center"> او </p>
+                <hr class="col-4">
+            </div>
+
+
+            <input type="text" id="user-name" class="form-control" placeholder="الاسم الكامل" required="" autofocus="">
+            <input type="email" id="user-email" class="form-control" placeholder="البريد الالكتروني" required
+                autofocus="">
+            <input type="password" id="user-pass" class="form-control" placeholder="كلمة المرور" required autofocus="">
+            <input type="password" id="user-repeatpass" class="form-control" placeholder="اعادة كلمة المرور" required
+                autofocus="">
+
+            <button class="btn btn-primary btn-block" type="submit"><span>
+                    تسجيل <i class="fas fa-user-plus mr-3"></i></button>
+            </span>
+            <a href="#" id="cancel_signup"> تسجيل الدخول <i class="fas fa-angle-left"></i> </a>
+        </form>
+    </div>
+    <script src="/js//trade-mark-form.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
