@@ -1,0 +1,41 @@
+* {
+  font-family: "Cairo", sans-serif;
+}
+body {
+  background-color: #f6f6f6;
+}
+p,
+label,
+legend,
+span {
+  font-size: 15pt !important;
+}
+
+.navbar {
+  padding: 0 30px;
+  justify-content: center;
+  direction: rtl;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.4rem!important;
+  color: #5e96fd;
+}
+
+.nav-item {
+  margin-right: 1rem;
+}
+
+.nav-link {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: auto 10px;
+  color: #303030;
+}
+
+.active {
+  padding: 8px;
+  border-bottom: 2px dotted;
+  border-color: #6c63ff;
+}
